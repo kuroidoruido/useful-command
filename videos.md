@@ -14,3 +14,8 @@ ffmpeg -i in.mp4 -filter:v "setpts=0.5*PTS" out.mp4
 ```
 ffmpeg -i in.mp4 -r 1 -f image2 image-%3d.png
 ```
+
+##### screencast
+```
+ffmpeg -f x11grab -r 25 -s 1366x768 -i :0.0 -vcodec huffyuv screencast.avi
+```
