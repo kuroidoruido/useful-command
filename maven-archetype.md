@@ -1,5 +1,12 @@
 # Maven archetypes
 
+#### Basic
+```
+mvn archetype:create
+    -DgroupId=group.id.name 
+	-DartifactId=ProjectName
+	-Dpackagename=package.name
+```
 #### Tomcat
 ```
 mvn archetype:generate 
