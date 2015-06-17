@@ -3,14 +3,13 @@
 #### Basic
 ```
 mvn archetype:create
-    -DgroupId=group.id.name 
-	-DartifactId=ProjectName
-	-Dpackagename=package.name
+    -DgroupId=com.example
+    -DartifactId=ProjectName
 ```
 #### Tomcat
 ```
 mvn archetype:generate 
-    -DgroupId=group.id.name 
+    -DgroupId=com.example
     -DartifactId=ProjectName 
     -DarchetypeArtifactId=maven-archetype-webapp 
     -DinteractiveMode=false
@@ -22,7 +21,7 @@ mvn archetype:generate
     -DarchetypeGroupId=org.glassfish.jersey.archetypes
     -DinteractiveMode=false
     -DgroupId=com.example
-    -DartifactId=Project
+    -DartifactId=ProjectName
     -Dpackage=com.example.project
     -DarchetypeVersion=2.17
 ```
