@@ -1,28 +1,30 @@
 # Maven archetypes
 
-#### Basic
+#### Basic java project
 ```
-mvn archetype:create
-    -DgroupId=com.example
+mvn archetype:create \
+    -DgroupId=com.example \
     -DartifactId=ProjectName
 ```
+
 #### Tomcat
 ```
-mvn archetype:generate 
-    -DgroupId=com.example
-    -DartifactId=ProjectName 
-    -DarchetypeArtifactId=maven-archetype-webapp 
-    -DinteractiveMode=false
+mvn archetype:generate \
+    -DarchetypeArtifactId=maven-archetype-webapp \
+    -DinteractiveMode=false \
+    -DgroupId=com.example \
+    -DartifactId=ProjectName
 ```
+
 #### Jersey + Grizzly2 (embed http server + servlet container)
 ```
-mvn archetype:generate
-    -DarchetypeArtifactId=jersey-quickstart-grizzly2
-    -DarchetypeGroupId=org.glassfish.jersey.archetypes
-    -DinteractiveMode=false
-    -DgroupId=com.example
-    -DartifactId=ProjectName
-    -Dpackage=com.example.project
+mvn archetype:generate \
+    -DarchetypeArtifactId=jersey-quickstart-grizzly2 \
+    -DarchetypeGroupId=org.glassfish.jersey.archetypes \
+    -DinteractiveMode=false \
+    -DgroupId=com.example \
+    -DartifactId=ProjectName \
+    -Dpackage=com.example.project \
     -DarchetypeVersion=2.17
 ```
 run project with :
