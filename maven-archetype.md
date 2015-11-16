@@ -2,9 +2,11 @@
 
 #### Basic java project
 ```
-mvn archetype:create \
+mvn archetype:generate \
+    -DartifactId=ProjectName \
     -DgroupId=com.example \
-    -DartifactId=ProjectName
+    -DarchetypeArtifactId=maven-archetype-quickstart \
+    -DinteractiveMode=false
 ```
 
 #### Tomcat
