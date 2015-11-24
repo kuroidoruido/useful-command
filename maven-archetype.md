@@ -26,9 +26,11 @@ mvn archetype:generate \
     -DinteractiveMode=false \
     -DgroupId=com.example \
     -DartifactId=ProjectName \
-    -Dpackage=com.example.project \
-    -DarchetypeVersion=2.17
+    -Dpackage=com.example \
+    -DarchetypeVersion=2.22.1
 ```
+[https://jersey.java.net/documentation/latest/getting-started.html#new-from-archetype](https://jersey.java.net/documentation/latest/getting-started.html#new-from-archetype)
+
 run project with :
 ```
 mvn exec:java
